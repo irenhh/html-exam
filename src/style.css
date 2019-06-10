@@ -37,11 +37,11 @@ body {
 }
 .person:hover img {
   border-radius: 60px;
-  margin-bottom: 9.6px;
+  margin-bottom: 8px;
 }
 .person:hover .extra {
   display: block;
-  margin-top: 10.8px;
+  margin-top: 9px;
   color: #000;
 }
 
@@ -81,7 +81,7 @@ body {
 
 @media (max-width: 750px) {
   .people {
-    grid: repeat(3, 245px)/repeat(2, 220px);
+    grid: repeat(5, 245px)/repeat(2, 220px);
   }
 }
 
