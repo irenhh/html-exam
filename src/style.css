@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  color: #2f4f4f;
+  font-weight: bold;
+}
+
+.people {
+  display: grid;
+  grid: auto-flow/repeat(4, 200px);
+  justify-content: center;
+  gap: 71px 30px;
+  padding-top: 30px;
+}
+
+.person:not(:hover) {
+  transition: all 1s;
+}
+
+.person:hover {
+  background: #eee;
+  border-radius: 12px;
+  padding: 12px;
+  width: 220px;
+  height: 287px;
+  transform: scale(1.2);
+  transition: all 1s;
+}
+.person:hover img {
+  border-radius: 60px;
+  margin-bottom: 9.6px;
+}
+.person:hover .extra {
+  display: block;
+  margin-top: 10.8px;
+  color: #000;
+}
+
+.photo {
+  position: relative;
+  height: 200px;
+  margin-bottom: 8px;
+}
+.photo .rank {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: white;
+  border-radius: 50%;
+  line-height: 32px;
+  font-size: 16px;
+  text-align: center;
+  top: 84px;
+  right: 10px;
+  color: #8b0000;
+}
+.photo img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.details {
+  text-align: center;
+}
+.details .extra {
+  display: none;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+@media (max-width: 750px) {
+  .people {
+    grid: auto-flow/repeat(2, 200px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
