@@ -14,9 +14,10 @@ body {
 
 .people {
   display: grid;
-  grid: auto-flow/repeat(4, 200px);
+  grid: repeat(3, 245px)/repeat(4, 220px);
   justify-content: center;
-  gap: 71px 30px;
+  justify-items: center;
+  gap: 20px 10px;
   padding-top: 30px;
 }
 
@@ -32,6 +33,7 @@ body {
   height: 287px;
   transform: scale(1.2);
   transition: all 1s;
+  z-index: 1;
 }
 .person:hover img {
   border-radius: 60px;
@@ -46,6 +48,7 @@ body {
 .photo {
   position: relative;
   height: 200px;
+  width: 200px;
   margin-bottom: 8px;
 }
 .photo .rank {
@@ -78,7 +81,7 @@ body {
 
 @media (max-width: 750px) {
   .people {
-    grid: auto-flow/repeat(2, 200px);
+    grid: repeat(3, 245px)/repeat(2, 220px);
   }
 }
 
